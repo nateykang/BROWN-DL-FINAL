@@ -1,0 +1,846 @@
+﻿id,week,home_id,home_team,home_points,away_id,away_team,away_points
+401013357,1,113,UMass,63,2184,Duquesne,15
+401014972,1,242,Rice,31,2504,Prairie View,28
+401022510,1,36,Colorado State,34,62,Hawai'i,43
+401013437,1,166,New Mexico State,7,2751,Wyoming,29
+401019470,1,41,Connecticut,17,2116,UCF,56
+401020671,1,2050,Ball State,42,2115,Central Connecticut,6
+401021651,1,2247,Georgia State,24,338,Kennesaw State,20
+401013328,1,135,Minnesota,48,166,New Mexico State,10
+401021655,1,2433,Louisiana Monroe,34,2545,Southeastern Louisiana,31
+401014979,1,5,UAB,52,2542,Savannah State,0
+401013489,1,197,Oklahoma State,58,2623,Missouri State,17
+401012675,1,254,Utah,41,2692,Weber State,10
+401013086,1,2655,Tulane,17,154,Wake Forest,23
+401013342,1,2509,Purdue,27,77,Northwestern,31
+401012258,1,245,Texas A&M,59,2466,Northwestern State,7
+401022511,1,23,San José State,38,302,UC Davis,44
+401020673,1,2711,Western Michigan,42,183,Syracuse,55
+401020672,1,2199,Eastern Michigan,51,2405,Monmouth,17
+401013089,1,150,Duke,34,349,Army,14
+401012880,1,127,Michigan State,38,328,Utah State,31
+401022517,1,2440,Nevada,72,2502,Portland State,19
+401022512,1,24,Stanford,31,21,San Diego State,10
+401013354,1,275,Wisconsin,34,98,Western Kentucky,3
+401012680,1,36,Colorado State,13,38,Colorado,45
+401012256,1,2579,South Carolina,49,324,Coastal Carolina,15
+401012820,1,164,Rutgers,35,326,Texas State,7
+401014977,1,242,Rice,27,248,Houston,45
+401012253,1,2641,Texas Tech,27,145,Ole Miss,47
+401012682,1,194,Ohio State,77,204,Oregon State,31
+401012872,1,120,Maryland,34,251,Texas,29
+401013065,1,201,Oklahoma,63,2226,Florida Atlantic,14
+401012804,1,356,Illinois,31,2309,Kent State,24
+401013072,1,2628,TCU,55,2582,Southern,7
+401013091,1,152,NC State,24,256,James Madison,13
+401019473,1,218,Temple,17,222,Villanova,19
+401013088,1,228,Clemson,48,231,Furman,7
+401013090,1,59,Georgia Tech,41,2016,Alcorn State,0
+401013087,1,103,Boston College,55,113,UMass,21
+401022514,1,2005,Air Force,38,2619,Stony Brook,0
+401020675,1,195,Ohio,38,47,Howard,32
+401012250,1,61,Georgia,45,2046,Austin Peay,0
+401013092,1,221,Pittsburgh,33,399,Albany,7
+401013349,1,213,Penn State,45,2026,Appalachian State,38
+401012257,1,2633,Tennessee,14,277,West Virginia,40
+401012251,1,96,Kentucky,35,2117,Central Michigan,20
+401012683,1,2751,Wyoming,19,265,Washington State,41
+401012248,1,2,Auburn,21,264,Washington,16
+401012862,1,2294,Iowa,33,2459,Northern Illinois,7
+401012678,1,30,USC,43,2439,UNLV,21
+401012684,1,25,California,24,153,North Carolina,17
+401012255,1,142,Missouri,51,2630,UT Martin,14
+401012247,1,8,Arkansas,55,2197,Eastern Illinois,20
+401021653,1,290,Georgia Southern,37,2569,South Carolina State,6
+401013094,1,258,Virginia,42,257,Richmond,13
+401019472,1,58,South Florida,34,2210,Elon,14
+401014973,1,2429,Charlotte,34,2230,Fordham,10
+401021656,1,2653,Troy,20,68,Boise State,56
+401020674,1,2084,Buffalo,48,2169,Delaware State,10
+401014975,1,193,Miami (OH),28,276,Marshall,35
+401013448,1,2335,Liberty,52,295,Old Dominion,10
+401012851,1,2229,Florida International,28,84,Indiana,38
+401013048,1,2305,Kansas,23,2447,Nicholls,26
+401019474,1,235,Memphis,66,2382,Mercer,14
+401021654,1,309,Louisiana,49,2755,Grambling,17
+401012679,1,26,UCLA,17,2132,Cincinnati,26
+401019476,1,202,Tulsa,38,2110,Central Arkansas,27
+401021652,1,2032,Arkansas State,48,2546,Southeast Missouri State,21
+401013057,1,2306,Kansas State,27,233,South Dakota,24
+401014978,1,2572,Southern Mississippi,55,2296,Jackson State,7
+401014974,1,6,South Alabama,26,2348,Louisiana Tech,30
+401020676,1,2649,Toledo,66,2678,VMI,3
+401014976,1,249,North Texas,46,2567,SMU,23
+401012254,1,344,Mississippi State,63,2617,Stephen F. Austin,6
+401012249,1,57,Florida,53,2127,Charleston Southern,6
+401014980,1,2638,UTEP,10,2464,Northern Arizona,30
+401012888,1,87,Notre Dame,24,130,Michigan,17
+401012259,1,238,Vanderbilt,35,2393,Middle Tennessee,7
+401012681,1,2483,Oregon,58,189,Bowling Green,24
+401012246,1,333,Alabama,51,97,Louisville,14
+401022515,1,167,New Mexico,62,2916,Incarnate Word,30
+401013026,1,239,Baylor,55,2000,Abilene Christian,27
+401022516,1,278,Fresno State,79,70,Idaho,13
+401012677,1,9,Arizona State,49,2636,UT San Antonio,7
+401012676,1,12,Arizona,23,252,BYU,28
+401019475,1,62,Hawai'i,59,2426,Navy,41
+401079833,1,151,East Carolina,23,2448,North Carolina A&T,28
+401013095,1,99,LSU,33,2390,Miami,17
+401013096,1,52,Florida State,3,259,Virginia Tech,24
+401019477,2,2567,SMU,12,2628,TCU,42
+401013098,2,77,Northwestern,7,150,Duke,21
+401012271,2,238,Vanderbilt,41,2440,Nevada,10
+401012266,2,2306,Kansas State,10,344,Mississippi State,31
+401012726,2,248,Houston,45,12,Arizona,18
+401013355,2,275,Wisconsin,45,167,New Mexico,14
+401012889,2,130,Michigan,49,2711,Western Michigan,3
+401013367,2,349,Army,38,2335,Liberty,14
+401013352,2,2509,Purdue,19,2199,Eastern Michigan,20
+401013100,2,58,South Florida,49,59,Georgia Tech,38
+401013108,2,154,Wake Forest,51,119,Towson,20
+401013104,2,152,NC State,41,2247,Georgia State,7
+401012728,2,201,Oklahoma,49,26,UCLA,21
+401013097,2,103,Boston College,62,107,Holy Cross,14
+401013107,2,259,Virginia Tech,62,2729,William & Mary,17
+401012731,2,2483,Oregon,62,2502,Portland State,14
+401014983,2,2226,Florida Atlantic,33,2005,Air Force,26
+401013049,2,2117,Central Michigan,7,2305,Kansas,31
+401012268,2,2579,South Carolina,17,61,Georgia,41
+401019479,2,2426,Navy,22,235,Memphis,21
+401019478,2,218,Temple,29,2084,Buffalo,36
+401012821,2,194,Ohio State,52,164,Rutgers,3
+401012260,2,333,Alabama,57,2032,Arkansas State,7
+401012729,2,158,Nebraska,28,38,Colorado,33
+401013106,2,183,Syracuse,62,2681,Wagner,10
+401013103,2,151,East Carolina,41,153,North Carolina,19
+401020677,2,2309,Kent State,54,47,Howard,14
+401020678,2,2006,Akron,41,2415,Morgan State,7
+401013377,2,87,Notre Dame,24,2050,Ball State,16
+401012269,2,2633,Tennessee,59,2193,East Tennessee State,3
+401012265,2,145,Ole Miss,76,79,Southern Illinois,41
+401013322,2,2641,Texas Tech,77,2320,Lamar,0
+401012733,2,264,Washington,45,155,North Dakota,3
+401012863,2,2294,Iowa,13,66,Iowa State,3
+401013358,2,290,Georgia Southern,34,113,UMass,13
+401014981,2,2429,Charlotte,9,2026,Appalachian State,45
+401012873,2,189,Bowling Green,14,120,Maryland,45
+401013326,2,277,West Virginia,52,2754,Youngstown State,17
+401013102,2,2390,Miami,77,2542,Savannah State,0
+401019481,2,2116,UCF,38,2569,South Carolina State,0
+401014985,2,276,Marshall,32,2198,Eastern Kentucky,16
+401012264,2,99,LSU,31,2545,Southeastern Louisiana,0
+401021658,2,2653,Troy,59,50,Florida A&M,7
+401014986,2,2393,Middle Tennessee,61,2630,UT Martin,37
+401013101,2,97,Louisville,31,282,Indiana State,7
+401014984,2,2348,Louisiana Tech,54,2582,Southern,17
+401021657,2,326,Texas State,36,2640,Texas Southern,20
+401014990,2,324,Coastal Carolina,47,5,UAB,24
+401012267,2,142,Missouri,40,2751,Wyoming,13
+401014989,2,2572,Southern Mississippi,20,2433,Louisiana Monroe,21
+401013027,2,2636,UT San Antonio,20,239,Baylor,37
+401012270,2,245,Texas A&M,26,228,Clemson,28
+401013099,2,52,Florida State,36,2535,Samford,26
+401012805,2,356,Illinois,34,2710,Western Illinois,14
+401014987,2,249,North Texas,58,2916,Incarnate Word,16
+401014992,2,98,Western Kentucky,28,311,Maine,31
+401012262,2,2,Auburn,63,2011,Alabama State,9
+401012730,2,2459,Northern Illinois,6,254,Utah,17
+401013329,2,135,Minnesota,21,278,Fresno State,14
+401014982,2,295,Old Dominion,20,2229,Florida International,28
+401012263,2,57,Florida,16,96,Kentucky,27
+401012852,2,84,Indiana,20,258,Virginia,16
+401012261,2,36,Colorado State,34,8,Arkansas,27
+401013490,2,197,Oklahoma State,55,6,South Alabama,13
+401019482,2,193,Miami (OH),0,2132,Cincinnati,21
+401013319,2,251,Texas,28,202,Tulsa,21
+401013438,2,328,Utah State,60,166,New Mexico State,13
+401013105,2,221,Pittsburgh,6,213,Penn State,51
+401019480,2,2655,Tulane,42,2447,Nicholls,17
+401012732,2,204,Oregon State,48,253,Southern Utah,25
+401012736,2,24,Stanford,17,30,USC,3
+401014991,2,2439,UNLV,52,2638,UTEP,24
+401022518,2,21,San Diego State,28,16,Sacramento State,14
+401012735,2,252,BYU,18,25,California,21
+401019483,2,68,Boise State,62,41,Connecticut,7
+401012727,2,9,Arizona State,16,127,Michigan State,13
+401012734,2,265,Washington State,31,23,San José State,0
+401014988,2,62,Hawai'i,43,242,Rice,29
+401021659,3,2097,Campbell,21,324,Coastal Carolina,58
+401014993,3,2429,Charlotte,28,295,Old Dominion,25
+401013109,3,154,Wake Forest,34,103,Boston College,41
+401022519,3,328,Utah State,73,2635,Tennessee Tech,12
+401019484,3,235,Memphis,59,2247,Georgia State,22
+401012853,3,84,Indiana,38,2050,Ball State,10
+401012275,3,61,Georgia,49,2393,Middle Tennessee,7
+401012281,3,2633,Tennessee,24,2638,UTEP,0
+401013368,3,349,Army,28,62,Hawai'i,21
+401013114,3,2649,Toledo,24,2390,Miami,49
+401012822,3,2305,Kansas,55,164,Rutgers,14
+401013350,3,213,Penn State,63,2309,Kent State,10
+401013039,3,66,Iowa State,27,201,Oklahoma,37
+401013337,3,158,Nebraska,19,2653,Troy,24
+401013110,3,228,Clemson,38,290,Georgia Southern,7
+401012874,3,120,Maryland,14,218,Temple,35
+401013111,3,183,Syracuse,30,52,Florida State,7
+401019486,3,41,Connecticut,56,227,Rhode Island,49
+401012276,3,96,Kentucky,48,93,Murray State,10
+401013112,3,221,Pittsburgh,24,59,Georgia Tech,19
+401014996,3,5,UAB,31,2655,Tulane,24
+401012747,3,24,Stanford,30,302,UC Davis,10
+401012283,3,87,Notre Dame,22,238,Vanderbilt,17
+401012273,3,2,Auburn,21,99,LSU,22
+401013491,3,197,Oklahoma State,44,68,Boise State,21
+401012806,3,356,Illinois,19,58,South Florida,25
+401013028,3,239,Baylor,27,150,Duke,40
+401013356,3,275,Wisconsin,21,252,BYU,24
+401020679,3,2459,Northern Illinois,24,2117,Central Michigan,16
+401012890,3,130,Michigan,45,2567,SMU,20
+401013330,3,135,Minnesota,26,193,Miami (OH),3
+401019487,3,2426,Navy,51,2329,Lehigh,21
+401012274,3,57,Florida,48,36,Colorado State,10
+401020681,3,189,Bowling Green,42,2198,Eastern Kentucky,35
+401022520,3,2751,Wyoming,17,2747,Wofford,14
+401012272,3,8,Arkansas,17,249,North Texas,44
+401013058,3,2306,Kansas State,41,2636,UT San Antonio,17
+401013323,3,2641,Texas Tech,63,248,Houston,49
+401013117,3,258,Virginia,45,195,Ohio,31
+401012743,3,2483,Oregon,35,23,San José State,22
+401012741,3,38,Colorado,45,160,New Hampshire,14
+401020682,3,2084,Buffalo,35,2199,Eastern Michigan,28
+401012746,3,25,California,45,304,Idaho State,23
+401014994,3,2226,Florida Atlantic,49,2065,Bethune-Cookman,28
+401019488,3,202,Tulsa,20,2032,Arkansas State,29
+401021660,3,6,South Alabama,41,326,Texas State,31
+401020680,3,2711,Western Michigan,68,2169,Delaware State,0
+401012277,3,145,Ole Miss,7,333,Alabama,62
+401019485,3,2132,Cincinnati,63,2010,Alabama A&M,7
+401012744,3,2440,Nevada,37,204,Oregon State,35
+401013343,3,77,Northwestern,34,2006,Akron,39
+401012864,3,2294,Iowa,38,2460,Northern Iowa,14
+401012278,3,344,Mississippi State,56,309,Louisiana,10
+401012279,3,2509,Purdue,37,142,Missouri,40
+401013113,3,97,Louisville,20,98,Western Kentucky,17
+401013359,3,2229,Florida International,63,113,UMass,24
+401012282,3,245,Texas A&M,48,2433,Louisiana Monroe,10
+401013074,3,2628,TCU,28,194,Ohio State,40
+401012745,3,265,Washington State,59,331,Eastern Washington,24
+401012739,3,251,Texas,37,30,USC,14
+401013439,3,166,New Mexico State,25,167,New Mexico,42
+401022521,3,2439,UNLV,46,2504,Prairie View,17
+401012742,3,254,Utah,7,264,Washington,21
+401012738,3,21,San Diego State,28,9,Arizona State,21
+401012740,3,26,UCLA,14,278,Fresno State,38
+401012737,3,12,Arizona,62,253,Southern Utah,31
+401019489,4,218,Temple,31,202,Tulsa,17
+401019490,4,2116,UCF,56,2226,Florida Atlantic,36
+401012807,4,356,Illinois,24,213,Penn State,63
+401012748,4,30,USC,39,265,Washington State,36
+401012288,4,145,Ole Miss,38,2309,Kent State,17
+401012875,4,120,Maryland,42,135,Minnesota,13
+401013040,4,66,Iowa State,26,2006,Akron,13
+401012289,4,142,Missouri,29,61,Georgia,43
+401013129,4,154,Wake Forest,27,87,Notre Dame,56
+401019495,4,2567,SMU,31,2426,Navy,30
+401019491,4,2132,Cincinnati,34,195,Ohio,30
+401012891,4,130,Michigan,56,158,Nebraska,10
+401012823,4,164,Rutgers,13,2084,Buffalo,42
+401013119,4,2509,Purdue,30,103,Boston College,13
+401020685,4,2649,Toledo,63,2440,Nevada,44
+401013125,4,153,North Carolina,38,221,Pittsburgh,35
+401013123,4,258,Virginia,27,97,Louisville,3
+401020686,4,2247,Georgia State,15,2711,Western Michigan,34
+401015000,4,2050,Ball State,20,98,Western Kentucky,28
+401022523,4,36,Colorado State,19,2287,Illinois State,35
+401020684,4,2117,Central Michigan,17,311,Maine,5
+401020811,4,189,Bowling Green,23,193,Miami (OH),38
+401012284,4,333,Alabama,45,245,Texas A&M,23
+401013360,4,113,UMass,49,2429,Charlotte,31
+401013059,4,277,West Virginia,35,2306,Kansas State,6
+401013128,4,295,Old Dominion,49,259,Virginia Tech,35
+401013029,4,239,Baylor,26,2305,Kansas,7
+401013124,4,2390,Miami,31,2229,Florida International,17
+401021661,4,2026,Appalachian State,72,2241,Gardner-Webb,7
+401013121,4,150,Duke,55,2428,North Carolina Central,13
+401013346,4,194,Ohio State,49,2655,Tulane,6
+401013120,4,59,Georgia Tech,21,228,Clemson,49
+401013122,4,52,Florida State,37,2459,Northern Illinois,19
+401012750,4,204,Oregon State,14,12,Arizona,35
+401013127,4,183,Syracuse,51,41,Connecticut,21
+401012291,4,238,Vanderbilt,14,2579,South Carolina,37
+401013075,4,251,Texas,31,2628,TCU,16
+401013450,4,2335,Liberty,7,249,North Texas,47
+401016406,4,252,BYU,30,2377,McNeese,3
+401012290,4,2633,Tennessee,21,57,Florida,47
+401013126,4,276,Marshall,20,152,NC State,37
+401014998,4,2572,Southern Mississippi,40,242,Rice,22
+401012287,4,99,LSU,38,2348,Louisiana Tech,21
+401021662,4,2032,Arkansas State,27,2439,UNLV,20
+401012286,4,96,Kentucky,28,344,Mississippi State,7
+401013066,4,201,Oklahoma,28,349,Army,21
+401013324,4,197,Oklahoma State,17,2641,Texas Tech,41
+401014999,4,2636,UT San Antonio,25,326,Texas State,21
+401021664,4,2433,Louisiana Monroe,27,2653,Troy,35
+401021663,4,309,Louisiana,28,324,Coastal Carolina,30
+401013440,4,2638,UTEP,20,166,New Mexico State,27
+401012285,4,2,Auburn,34,8,Arkansas,3
+401012854,4,84,Indiana,21,127,Michigan State,35
+401012749,4,2483,Oregon,31,24,Stanford,38
+401019493,4,248,Houston,70,2640,Texas Southern,14
+401019492,4,58,South Florida,20,151,East Carolina,13
+401019494,4,235,Memphis,52,6,South Alabama,35
+401012865,4,2294,Iowa,17,275,Wisconsin,28
+401020683,4,21,San Diego State,23,2199,Eastern Michigan,20
+401022522,4,328,Utah State,42,2005,Air Force,32
+401012751,4,264,Washington,27,9,Arizona State,20
+401022524,4,62,Hawai'i,42,2184,Duquesne,21
+401013466,5,2390,Miami,47,153,North Carolina,10
+401019496,5,2655,Tulane,40,235,Memphis,24
+401012752,5,38,Colorado,38,26,UCLA,16
+401012293,5,245,Texas A&M,24,8,Arkansas,17
+401013131,5,228,Clemson,27,183,Syracuse,23
+401013130,5,103,Boston College,45,218,Temple,35
+401012292,5,333,Alabama,56,309,Louisiana,14
+401013134,5,59,Georgia Tech,63,189,Bowling Green,17
+401012881,5,127,Michigan State,31,2117,Central Michigan,20
+401013050,5,2305,Kansas,28,197,Oklahoma State,48
+401012824,5,164,Rutgers,17,84,Indiana,24
+401013369,5,2084,Buffalo,13,349,Army,42
+401013325,5,2641,Texas Tech,34,277,West Virginia,42
+401013135,5,152,NC State,35,258,Virginia,21
+401013361,5,195,Ohio,58,113,UMass,42
+401021668,5,2247,Georgia State,46,2433,Louisiana Monroe,14
+401020687,5,2050,Ball State,52,2309,Kent State,24
+401013030,5,201,Oklahoma,66,239,Baylor,33
+401013060,5,2306,Kansas State,14,251,Texas,19
+401021665,5,2026,Appalachian State,52,6,South Alabama,7
+401021667,5,2653,Troy,45,324,Coastal Carolina,21
+401019497,5,41,Connecticut,7,2132,Cincinnati,49
+401015006,5,151,East Carolina,37,295,Old Dominion,35
+401020750,5,193,Miami (OH),39,2711,Western Michigan,40
+401013338,5,158,Nebraska,28,2509,Purdue,42
+401013137,5,154,Wake Forest,56,242,Rice,24
+401013133,5,97,Louisville,24,52,Florida State,28
+401013136,5,2116,UCF,45,221,Pittsburgh,14
+401012295,5,61,Georgia,38,2633,Tennessee,12
+401012294,5,2,Auburn,24,2572,Southern Mississippi,13
+401012299,5,238,Vanderbilt,31,2634,Tennessee State,27
+401022525,5,2005,Air Force,25,2440,Nevada,28
+401012892,5,77,Northwestern,17,130,Michigan,20
+401020688,5,2199,Eastern Michigan,23,2459,Northern Illinois,26
+401021666,5,290,Georgia Southern,28,2032,Arkansas State,21
+401012298,5,344,Mississippi State,6,57,Florida,13
+401013451,5,167,New Mexico,43,2335,Liberty,52
+401012756,5,265,Washington State,28,254,Utah,24
+401019498,5,2567,SMU,63,2277,Houston Baptist,27
+401022527,5,23,San José State,41,62,Hawai'i,44
+401015007,5,2636,UT San Antonio,30,2638,UTEP,21
+401015001,5,5,UAB,28,2429,Charlotte,7
+401013132,5,150,Duke,14,259,Virginia Tech,31
+401022526,5,2751,Wyoming,14,68,Boise State,34
+401015003,5,2393,Middle Tennessee,25,2226,Florida Atlantic,24
+401013041,5,2628,TCU,17,66,Iowa State,14
+401015004,5,249,North Texas,27,2348,Louisiana Tech,29
+401012758,5,87,Notre Dame,38,24,Stanford,17
+401015005,5,98,Western Kentucky,17,276,Marshall,20
+401012296,5,96,Kentucky,24,2579,South Carolina,10
+401013347,5,213,Penn State,26,194,Ohio State,27
+401015002,5,2229,Florida International,55,2029,Arkansas-Pine Bluff,9
+401012755,5,264,Washington,35,252,BYU,7
+401012297,5,99,LSU,45,145,Ole Miss,16
+401012754,5,9,Arizona State,52,204,Oregon State,24
+401020689,5,278,Fresno State,49,2649,Toledo,27
+401012753,5,12,Arizona,20,30,USC,24
+401012757,5,25,California,24,2483,Oregon,42
+401021669,6,2653,Troy,37,2247,Georgia State,20
+401019499,6,248,Houston,41,202,Tulsa,26
+401013138,6,97,Louisville,31,59,Georgia Tech,66
+401015010,6,276,Marshall,24,2393,Middle Tennessee,34
+401016407,6,252,BYU,20,328,Utah State,45
+401020752,6,2117,Central Michigan,24,2084,Buffalo,34
+401012305,6,2579,South Carolina,37,142,Missouri,35
+401019503,6,218,Temple,49,151,East Carolina,6
+401013051,6,277,West Virginia,38,2305,Kansas,22
+401012808,6,164,Rutgers,17,356,Illinois,38
+401012300,6,8,Arkansas,31,333,Alabama,65
+401019501,6,2132,Cincinnati,37,2655,Tulane,21
+401012876,6,130,Michigan,42,120,Maryland,21
+401013067,6,201,Oklahoma,45,251,Texas,48
+401012882,6,127,Michigan State,19,77,Northwestern,29
+401020753,6,2711,Western Michigan,27,2199,Eastern Michigan,24
+401013142,6,221,Pittsburgh,44,183,Syracuse,37
+401013139,6,152,NC State,28,103,Boston College,23
+401020754,6,2050,Ball State,16,2459,Northern Illinois,24
+401022528,6,68,Boise State,13,21,San Diego State,19
+401021670,6,290,Georgia Southern,48,6,South Alabama,13
+401013140,6,154,Wake Forest,3,228,Clemson,63
+401020812,6,2006,Akron,17,193,Miami (OH),41
+401019504,6,2005,Air Force,35,2426,Navy,7
+401020751,6,2649,Toledo,52,189,Bowling Green,36
+401013042,6,197,Oklahoma State,42,66,Iowa State,48
+401012866,6,135,Minnesota,31,2294,Iowa,48
+401013362,6,113,UMass,42,58,South Florida,58
+401020755,6,2309,Kent State,26,195,Ohio,27
+401013031,6,239,Baylor,37,2306,Kansas State,34
+401012301,6,57,Florida,27,99,LSU,19
+401013141,6,2390,Miami,28,52,Florida State,27
+401012761,6,38,Colorado,28,9,Arizona State,21
+401012303,6,145,Ole Miss,70,2433,Louisiana Monroe,21
+401012855,6,194,Ohio State,49,84,Indiana,26
+401022530,6,2439,UNLV,14,167,New Mexico,50
+401015008,6,2226,Florida Atlantic,52,295,Old Dominion,33
+401015009,6,2348,Louisiana Tech,7,5,UAB,28
+401021671,6,326,Texas State,27,309,Louisiana,42
+401019500,6,2116,UCF,48,2567,SMU,20
+401019502,6,235,Memphis,55,41,Connecticut,14
+401012306,6,245,Texas A&M,20,96,Kentucky,14
+401015012,6,242,Rice,3,2636,UT San Antonio,20
+401015011,6,2638,UTEP,24,249,North Texas,27
+401012304,6,344,Mississippi State,23,2,Auburn,9
+401013339,6,275,Wisconsin,41,158,Nebraska,24
+401012302,6,61,Georgia,41,238,Vanderbilt,13
+401012760,6,26,UCLA,24,264,Washington,31
+401013143,6,259,Virginia Tech,23,87,Notre Dame,45
+401013441,6,166,New Mexico State,49,2335,Liberty,41
+401012762,6,204,Oregon State,37,265,Washington State,56
+401012759,6,12,Arizona,24,25,California,17
+401022529,6,23,San José State,30,36,Colorado State,42
+401012763,6,24,Stanford,21,254,Utah,40
+401022532,6,2440,Nevada,3,278,Fresno State,21
+401022531,6,62,Hawai'i,17,2751,Wyoming,13
+401021672,7,2032,Arkansas State,9,2026,Appalachian State,35
+401021673,7,326,Texas State,13,290,Georgia Southern,15
+401013076,7,2628,TCU,14,2641,Texas Tech,17
+401019505,7,202,Tulsa,24,58,South Florida,25
+401022533,7,21,San Diego State,21,2005,Air Force,17
+401012764,7,254,Utah,42,12,Arizona,10
+401012312,7,238,Vanderbilt,27,57,Florida,37
+401020759,7,2199,Eastern Michigan,28,2649,Toledo,26
+401020756,7,2084,Buffalo,24,2006,Akron,6
+401012309,7,2,Auburn,24,2633,Tennessee,30
+401012856,7,84,Indiana,16,2294,Iowa,42
+401013061,7,2306,Kansas State,31,197,Oklahoma State,12
+401013331,7,194,Ohio State,30,135,Minnesota,14
+401012825,7,120,Maryland,34,164,Rutgers,7
+401013340,7,77,Northwestern,34,158,Nebraska,31
+401013145,7,59,Georgia Tech,14,150,Duke,28
+401013144,7,103,Boston College,38,97,Louisville,20
+401015018,7,242,Rice,0,5,UAB,42
+401015017,7,249,North Texas,30,2572,Southern Mississippi,7
+401013452,7,2335,Liberty,22,2653,Troy,16
+401020810,7,193,Miami (OH),31,2309,Kent State,6
+401013148,7,87,Notre Dame,19,221,Pittsburgh,14
+401020760,7,189,Bowling Green,35,2711,Western Michigan,42
+401020757,7,2117,Central Michigan,23,2050,Ball State,24
+401019508,7,2426,Navy,17,218,Temple,24
+401012883,7,213,Penn State,17,127,Michigan State,21
+401012766,7,2483,Oregon,30,264,Washington,27
+401012311,7,2579,South Carolina,23,245,Texas A&M,26
+401015016,7,295,Old Dominion,20,276,Marshall,42
+401013370,7,23,San José State,3,349,Army,52
+401015013,7,2429,Charlotte,40,98,Western Kentucky,14
+401020758,7,2459,Northern Illinois,24,195,Ohio,21
+401013032,7,251,Texas,23,239,Baylor,17
+401012310,7,99,LSU,36,61,Georgia,16
+401019506,7,235,Memphis,30,2116,UCF,31
+401012809,7,356,Illinois,7,2509,Purdue,46
+401022535,7,36,Colorado State,20,167,New Mexico,18
+401022536,7,328,Utah State,59,2439,UNLV,28
+401013442,7,309,Louisiana,66,166,New Mexico State,38
+401021675,7,6,South Alabama,45,2011,Alabama State,7
+401021674,7,324,Coastal Carolina,20,2433,Louisiana Monroe,45
+401013147,7,153,North Carolina,19,259,Virginia Tech,22
+401012767,7,25,California,7,26,UCLA,30
+401012307,7,333,Alabama,39,142,Missouri,10
+401015015,7,2636,UT San Antonio,3,2348,Louisiana Tech,31
+401013043,7,66,Iowa State,30,277,West Virginia,14
+401013146,7,258,Virginia,16,2390,Miami,13
+401019507,7,151,East Carolina,20,248,Houston,42
+401012308,7,8,Arkansas,33,145,Ole Miss,37
+401012893,7,130,Michigan,38,275,Wisconsin,13
+401015014,7,2229,Florida International,24,2393,Middle Tennessee,21
+401016408,7,252,BYU,49,62,Hawai'i,23
+401022537,7,278,Fresno State,27,2751,Wyoming,3
+401012765,7,30,USC,31,38,Colorado,20
+401022534,7,2440,Nevada,27,68,Boise State,31
+401021676,8,2032,Arkansas State,51,2247,Georgia State,35
+401012768,8,9,Arizona State,13,24,Stanford,20
+401022538,8,68,Boise State,56,36,Colorado State,28
+401022539,8,2439,UNLV,35,2005,Air Force,41
+401012867,8,2294,Iowa,23,120,Maryland,0
+401019510,8,218,Temple,24,2132,Cincinnati,17
+401013371,8,349,Army,31,193,Miami (OH),30
+401020763,8,2649,Toledo,17,2084,Buffalo,31
+401012316,8,145,Ole Miss,16,2,Auburn,31
+401012846,8,164,Rutgers,15,77,Northwestern,18
+401012810,8,275,Wisconsin,49,356,Illinois,20
+401012884,8,127,Michigan State,7,130,Michigan,21
+401013068,8,2628,TCU,27,201,Oklahoma,52
+401012313,8,8,Arkansas,23,202,Tulsa,0
+401013152,8,183,Syracuse,40,153,North Carolina,37
+401013150,8,150,Duke,14,258,Virginia,28
+401020762,8,195,Ohio,49,189,Bowling Green,14
+401013453,8,2335,Liberty,48,304,Idaho State,41
+401022540,8,2751,Wyoming,16,328,Utah State,24
+401015021,8,276,Marshall,31,2226,Florida Atlantic,7
+401020765,8,2117,Central Michigan,10,2711,Western Michigan,35
+401020764,8,2050,Ball State,20,2199,Eastern Michigan,42
+401015019,8,2393,Middle Tennessee,21,2429,Charlotte,13
+401012318,8,2633,Tennessee,21,333,Alabama,58
+401019512,8,2426,Navy,36,248,Houston,49
+401012857,8,84,Indiana,28,213,Penn State,33
+401015022,8,2348,Louisiana Tech,31,2638,UTEP,24
+401019513,8,2655,Tulane,23,2567,SMU,27
+401021677,8,2026,Appalachian State,27,309,Louisiana,17
+401013151,8,52,Florida State,38,154,Wake Forest,17
+401013149,8,228,Clemson,41,152,NC State,7
+401020761,8,2309,Kent State,23,2006,Akron,24
+401012772,8,264,Washington,27,38,Colorado,13
+401013363,8,113,UMass,13,324,Coastal Carolina,24
+401013332,8,158,Nebraska,53,135,Minnesota,28
+401013052,8,2641,Texas Tech,48,2305,Kansas,16
+401012771,8,204,Oregon State,7,25,California,49
+401012317,8,142,Missouri,65,235,Memphis,33
+401013443,8,166,New Mexico State,31,290,Georgia Southern,48
+401015025,8,2572,Southern Mississippi,27,2636,UT San Antonio,17
+401021678,8,2433,Louisiana Monroe,20,326,Texas State,14
+401019509,8,151,East Carolina,10,2116,UCF,37
+401019511,8,58,South Florida,38,41,Connecticut,30
+401012315,8,99,LSU,19,344,Mississippi State,3
+401012314,8,96,Kentucky,14,238,Vanderbilt,7
+401013348,8,2509,Purdue,49,194,Ohio State,20
+401012773,8,265,Washington State,34,2483,Oregon,20
+401015023,8,5,UAB,29,249,North Texas,21
+401022541,8,167,New Mexico,7,278,Fresno State,38
+401015024,8,98,Western Kentucky,34,295,Old Dominion,37
+401015020,8,2229,Florida International,36,242,Rice,17
+401012770,8,254,Utah,41,30,USC,28
+401012769,8,26,UCLA,31,12,Arizona,30
+401022543,8,21,San Diego State,16,23,San José State,13
+401022542,8,62,Hawai'i,22,2440,Nevada,40
+401021679,9,6,South Alabama,17,2653,Troy,38
+401013033,9,277,West Virginia,58,239,Baylor,14
+401020766,9,195,Ohio,52,2050,Ball State,14
+401020767,9,2711,Western Michigan,24,2649,Toledo,51
+401013153,9,259,Virginia Tech,28,59,Georgia Tech,49
+401021680,9,290,Georgia Southern,34,2026,Appalachian State,14
+401015028,9,2226,Florida Atlantic,13,2348,Louisiana Tech,21
+401013154,9,103,Boston College,27,2390,Miami,14
+401012858,9,135,Minnesota,38,84,Indiana,31
+401022546,9,36,Colorado State,21,2751,Wyoming,34
+401012774,9,26,UCLA,10,254,Utah,41
+401013155,9,52,Florida State,10,228,Clemson,59
+401013157,9,97,Louisville,35,154,Wake Forest,56
+401012319,9,8,Arkansas,31,238,Vanderbilt,45
+401085385,9,158,Nebraska,45,2065,Bethune-Cookman,9
+401013364,9,41,Connecticut,17,113,UMass,22
+401012885,9,127,Michigan State,23,2509,Purdue,13
+401013372,9,2199,Eastern Michigan,22,349,Army,37
+401013344,9,77,Northwestern,31,275,Wisconsin,17
+401020768,9,2006,Akron,17,2117,Central Michigan,10
+401013044,9,66,Iowa State,40,2641,Texas Tech,31
+401013158,9,258,Virginia,31,153,North Carolina,21
+401021682,9,2247,Georgia State,34,324,Coastal Carolina,37
+401015026,9,2429,Charlotte,20,2572,Southern Mississippi,17
+401012777,9,38,Colorado,34,204,Oregon State,41
+401013053,9,2305,Kansas,27,2628,TCU,26
+401012776,9,30,USC,35,9,Arizona State,38
+401012811,9,120,Maryland,63,356,Illinois,33
+401013156,9,221,Pittsburgh,54,150,Duke,45
+401013062,9,201,Oklahoma,51,2306,Kansas State,14
+401019515,9,248,Houston,57,58,South Florida,36
+401012868,9,213,Penn State,30,2294,Iowa,24
+401016409,9,252,BYU,6,2459,Northern Illinois,7
+401015029,9,295,Old Dominion,17,2393,Middle Tennessee,51
+401019514,9,2567,SMU,20,2132,Cincinnati,26
+401012320,9,61,Georgia,36,57,Florida,17
+401015030,9,249,North Texas,41,242,Rice,17
+401012322,9,142,Missouri,14,96,Kentucky,16
+401022545,9,328,Utah State,61,167,New Mexico,19
+401022549,9,23,San José State,50,2439,UNLV,37
+401012778,9,25,California,12,264,Washington,10
+401022544,9,2005,Air Force,38,68,Boise State,48
+401013159,9,183,Syracuse,51,152,NC State,41
+401021681,9,309,Louisiana,47,2032,Arkansas State,43
+401012321,9,344,Mississippi State,28,245,Texas A&M,13
+401012779,9,24,Stanford,38,265,Washington State,41
+401013444,9,326,Texas State,27,166,New Mexico State,20
+401019516,9,202,Tulsa,17,2655,Tulane,24
+401015027,9,98,Western Kentucky,17,2229,Florida International,38
+401012323,9,2579,South Carolina,27,2633,Tennessee,24
+401015031,9,2638,UTEP,0,5,UAB,19
+401013320,9,197,Oklahoma State,38,251,Texas,35
+401013189,9,2426,Navy,22,87,Notre Dame,44
+401022548,9,2440,Nevada,28,21,San Diego State,24
+401022547,9,278,Fresno State,50,62,Hawai'i,20
+401012775,9,12,Arizona,44,2483,Oregon,15
+401020770,10,2084,Buffalo,51,193,Miami (OH),42
+401020769,10,189,Bowling Green,28,2309,Kent State,35
+401020771,10,2649,Toledo,45,2050,Ball State,13
+401020773,10,2711,Western Michigan,14,195,Ohio,59
+401020772,10,2006,Akron,26,2459,Northern Illinois,36
+401019517,10,2116,UCF,52,218,Temple,40
+401013160,10,258,Virginia,13,221,Pittsburgh,23
+401015034,10,2393,Middle Tennessee,29,98,Western Kentucky,10
+401012780,10,12,Arizona,42,38,Colorado,34
+401013373,10,349,Army,17,2005,Air Force,14
+401012847,10,275,Wisconsin,31,164,Rutgers,17
+401019520,10,151,East Carolina,41,235,Memphis,59
+401013341,10,194,Ohio State,36,158,Nebraska,31
+401013162,10,228,Clemson,77,97,Louisville,16
+401013045,10,2305,Kansas,3,66,Iowa State,27
+401013034,10,239,Baylor,35,197,Oklahoma State,31
+401020774,10,2199,Eastern Michigan,17,2117,Central Michigan,7
+401012877,10,120,Maryland,3,127,Michigan State,24
+401013166,10,154,Wake Forest,24,183,Syracuse,41
+401012328,10,145,Ole Miss,44,2579,South Carolina,48
+401012324,10,2,Auburn,28,245,Texas A&M,24
+401013165,10,153,North Carolina,28,59,Georgia Tech,38
+401021686,10,2247,Georgia State,30,326,Texas State,40
+401022552,10,2751,Wyoming,24,23,San José State,9
+401021684,10,2032,Arkansas State,38,6,South Alabama,14
+401021685,10,2433,Louisiana Monroe,44,290,Georgia Southern,25
+401015033,10,2572,Southern Mississippi,26,276,Marshall,24
+401013188,10,251,Texas,41,277,West Virginia,42
+401012869,10,2509,Purdue,38,2294,Iowa,36
+401015035,10,242,Rice,26,2638,UTEP,34
+401021687,10,2653,Troy,26,309,Louisiana,16
+401012812,10,356,Illinois,55,135,Minnesota,31
+401019521,10,58,South Florida,15,2655,Tulane,41
+401013063,10,2628,TCU,14,2306,Kansas State,13
+401013365,10,113,UMass,62,2335,Liberty,59
+401019518,10,2132,Cincinnati,42,2426,Navy,0
+401013164,10,152,NC State,47,52,Florida State,28
+401012326,10,96,Kentucky,17,61,Georgia,34
+401012894,10,130,Michigan,42,213,Penn State,7
+401013161,10,259,Virginia Tech,21,103,Boston College,31
+401012330,10,2633,Tennessee,14,2429,Charlotte,3
+401013445,10,166,New Mexico State,52,2016,Alcorn State,42
+401012325,10,57,Florida,17,142,Missouri,38
+401012781,10,9,Arizona State,38,254,Utah,20
+401021683,10,324,Coastal Carolina,7,2026,Appalachian State,23
+401013163,10,2390,Miami,12,150,Duke,20
+401019519,10,202,Tulsa,49,41,Connecticut,19
+401019522,10,2567,SMU,45,248,Houston,31
+401013345,10,77,Northwestern,21,87,Notre Dame,31
+401012329,10,344,Mississippi State,45,2348,Louisiana Tech,3
+401012782,10,2483,Oregon,42,26,UCLA,21
+401015032,10,2229,Florida International,14,2226,Florida Atlantic,49
+401015036,10,5,UAB,52,2636,UT San Antonio,3
+401012327,10,99,LSU,0,333,Alabama,29
+401013069,10,2641,Texas Tech,46,201,Oklahoma,51
+401012784,10,264,Washington,27,24,Stanford,23
+401012783,10,204,Oregon State,21,30,USC,38
+401016410,10,68,Boise State,21,252,BYU,16
+401022550,10,167,New Mexico,23,21,San Diego State,31
+401022553,10,2439,UNLV,3,278,Fresno State,48
+401012785,10,265,Washington State,19,25,California,13
+401022551,10,62,Hawai'i,17,328,Utah State,56
+401020775,11,2084,Buffalo,48,2309,Kent State,14
+401020776,11,193,Miami (OH),30,195,Ohio,28
+401020777,11,2459,Northern Illinois,38,2649,Toledo,15
+401013167,11,152,NC State,23,154,Wake Forest,27
+401013168,11,183,Syracuse,54,97,Louisville,23
+401022556,11,68,Boise State,24,278,Fresno State,17
+401019525,11,41,Connecticut,50,2567,SMU,62
+401012333,11,57,Florida,35,2579,South Carolina,31
+401013077,11,277,West Virginia,47,2628,TCU,10
+401012335,11,142,Missouri,33,238,Vanderbilt,28
+401012813,11,158,Nebraska,54,356,Illinois,35
+401013054,11,2306,Kansas State,21,2305,Kansas,17
+401013366,11,113,UMass,16,252,BYU,35
+401020778,11,2199,Eastern Michigan,27,2006,Akron,7
+401013374,11,349,Army,31,322,Lafayette,13
+401019528,11,235,Memphis,47,202,Tulsa,21
+401012859,11,84,Indiana,34,120,Maryland,32
+401012337,11,245,Texas A&M,38,145,Ole Miss,24
+401012886,11,127,Michigan State,6,194,Ohio State,26
+401013351,11,213,Penn State,22,275,Wisconsin,10
+401019523,11,2116,UCF,35,2426,Navy,24
+401013170,11,150,Duke,42,153,North Carolina,35
+401021689,11,290,Georgia Southern,21,2653,Troy,35
+401012786,11,9,Arizona State,31,26,UCLA,28
+401015037,11,276,Marshall,30,2429,Charlotte,13
+401013174,11,258,Virginia,45,2335,Liberty,24
+401020779,11,2117,Central Michigan,13,189,Bowling Green,24
+401015041,11,2638,UTEP,32,2393,Middle Tennessee,48
+401013333,11,135,Minnesota,41,2509,Purdue,10
+401012788,11,38,Colorado,7,265,Washington State,31
+401012336,11,2633,Tennessee,24,96,Kentucky,7
+401013070,11,201,Oklahoma,48,197,Oklahoma State,47
+401022554,11,2005,Air Force,42,167,New Mexico,24
+401012331,11,333,Alabama,24,344,Mississippi State,0
+401013173,11,221,Pittsburgh,52,259,Virginia Tech,22
+401012848,11,164,Rutgers,7,130,Michigan,42
+401015042,11,295,Old Dominion,34,249,North Texas,31
+401013035,11,66,Iowa State,28,239,Baylor,14
+401012870,11,2294,Iowa,10,77,Northwestern,14
+401022557,11,328,Utah State,62,23,San José State,24
+401019526,11,2655,Tulane,24,151,East Carolina,18
+401021702,11,326,Texas State,7,2026,Appalachian State,38
+401021690,11,309,Louisiana,36,2247,Georgia State,22
+401021691,11,6,South Alabama,10,2433,Louisiana Monroe,38
+401021688,11,324,Coastal Carolina,16,2032,Arkansas State,44
+401015039,11,2226,Florida Atlantic,34,98,Western Kentucky,15
+401012789,11,254,Utah,32,2483,Oregon,25
+401015040,11,2348,Louisiana Tech,28,242,Rice,13
+401015038,11,2636,UT San Antonio,7,2229,Florida International,45
+401013172,11,59,Georgia Tech,27,2390,Miami,21
+401019527,11,248,Houston,49,218,Temple,59
+401012334,11,61,Georgia,27,2,Auburn,10
+401019524,11,2132,Cincinnati,35,58,South Florida,23
+401013171,11,87,Notre Dame,42,52,Florida State,13
+401012332,11,8,Arkansas,17,99,LSU,24
+401015043,11,5,UAB,26,2572,Southern Mississippi,23
+401013321,11,2641,Texas Tech,34,251,Texas,41
+401013169,11,103,Boston College,7,228,Clemson,27
+401012790,11,24,Stanford,48,204,Oregon State,17
+401022558,11,21,San Diego State,24,2439,UNLV,27
+401022555,11,2440,Nevada,49,36,Colorado State,10
+401012787,11,30,USC,14,25,California,15
+401020780,12,2050,Ball State,42,2711,Western Michigan,41
+401020781,12,195,Ohio,52,2084,Buffalo,17
+401020782,12,2459,Northern Illinois,7,193,Miami (OH),13
+401020783,12,2309,Kent State,34,2649,Toledo,56
+401019529,12,248,Houston,48,2655,Tulane,17
+401015045,12,249,North Texas,41,2226,Florida Atlantic,38
+401022560,12,167,New Mexico,14,68,Boise State,45
+401019530,12,2567,SMU,18,235,Memphis,28
+401012849,12,164,Rutgers,7,213,Penn State,20
+401012338,12,333,Alabama,50,2643,The Citadel,17
+401012340,12,57,Florida,63,70,Idaho,10
+401012887,12,158,Nebraska,9,127,Michigan State,6
+401013375,12,349,Army,28,2142,Colgate,14
+401013036,12,239,Baylor,9,2628,TCU,16
+401012344,12,344,Mississippi State,52,8,Arkansas,6
+401013181,12,154,Wake Forest,13,221,Pittsburgh,34
+401013334,12,135,Minnesota,14,77,Northwestern,24
+401012342,12,96,Kentucky,34,2393,Middle Tennessee,23
+401012878,12,120,Maryland,51,194,Ohio State,52
+401019533,12,218,Temple,27,58,South Florida,17
+401013178,12,97,Louisville,10,152,NC State,52
+401012792,12,38,Colorado,7,254,Utah,30
+401015044,12,2429,Charlotte,35,2229,Florida International,42
+401022561,12,36,Colorado State,24,328,Utah State,29
+401015048,12,295,Old Dominion,77,2678,VMI,14
+401015047,12,276,Marshall,23,2636,UT San Antonio,0
+401013182,12,87,Notre Dame,36,183,Syracuse,3
+401021692,12,2026,Appalachian State,45,2247,Georgia State,17
+401013180,12,153,North Carolina,49,2717,Western Carolina,26
+401022562,12,23,San José State,12,2440,Nevada,21
+401021693,12,2032,Arkansas State,31,2433,Louisiana Monroe,17
+401012814,12,356,Illinois,0,2294,Iowa,63
+401020784,12,2006,Akron,6,189,Bowling Green,21
+401019534,12,2426,Navy,37,202,Tulsa,29
+401013179,12,259,Virginia Tech,14,2390,Miami,38
+401013353,12,2509,Purdue,44,275,Wisconsin,47
+401013175,12,52,Florida State,22,103,Boston College,21
+401012791,12,26,UCLA,34,30,USC,27
+401013177,12,59,Georgia Tech,30,258,Virginia,27
+401021696,12,2653,Troy,12,326,Texas State,7
+401013327,12,197,Oklahoma State,45,277,West Virginia,41
+401015046,12,2572,Southern Mississippi,21,2348,Louisiana Tech,20
+401012346,12,2633,Tennessee,17,142,Missouri,50
+401013064,12,2306,Kansas State,21,2641,Texas Tech,6
+401012339,12,2,Auburn,53,2335,Liberty,0
+401022559,12,2751,Wyoming,35,2005,Air Force,27
+401012341,12,61,Georgia,66,113,UMass,27
+401012860,12,130,Michigan,31,84,Indiana,20
+401012794,12,264,Washington,42,204,Oregon State,23
+401021695,12,309,Louisiana,48,6,South Alabama,38
+401021694,12,324,Coastal Carolina,17,290,Georgia Southern,41
+401019532,12,151,East Carolina,55,41,Connecticut,21
+401012347,12,245,Texas A&M,41,5,UAB,20
+401013176,12,228,Clemson,35,150,Duke,6
+401012343,12,99,LSU,42,242,Rice,10
+401012345,12,2579,South Carolina,49,236,Chattanooga,9
+401015049,12,98,Western Kentucky,40,2638,UTEP,16
+401013055,12,201,Oklahoma,55,2305,Kansas,40
+401012348,12,238,Vanderbilt,36,145,Ole Miss,29
+401019531,12,2116,UCF,38,2132,Cincinnati,13
+401013046,12,251,Texas,24,66,Iowa State,10
+401013446,12,252,BYU,45,166,New Mexico State,10
+401012795,12,265,Washington State,69,12,Arizona,28
+401022563,12,278,Fresno State,23,21,San Diego State,14
+401012793,12,2483,Oregon,31,9,Arizona State,29
+401022564,12,62,Hawai'i,35,2439,UNLV,28
+401020785,13,193,Miami (OH),42,2050,Ball State,21
+401020786,13,2711,Western Michigan,28,2459,Northern Illinois,21
+401022565,13,2005,Air Force,27,36,Colorado State,19
+401012349,13,145,Ole Miss,3,344,Mississippi State,35
+401020790,13,2309,Kent State,20,2199,Eastern Michigan,28
+401013056,13,2305,Kansas,17,251,Texas,24
+401020789,13,2649,Toledo,51,2117,Central Michigan,13
+401019537,13,235,Memphis,52,248,Houston,31
+401012871,13,2294,Iowa,31,158,Nebraska,28
+401020787,13,195,Ohio,49,2006,Akron,28
+401020788,13,189,Bowling Green,14,2084,Buffalo,44
+401012354,13,142,Missouri,38,8,Arkansas,0
+401021699,13,6,South Alabama,31,324,Coastal Carolina,28
+401013183,13,259,Virginia Tech,34,258,Virginia,31
+401019536,13,2132,Cincinnati,56,151,East Carolina,6
+401012797,13,204,Oregon State,15,2483,Oregon,55
+401019535,13,58,South Florida,10,2116,UCF,38
+401013071,13,277,West Virginia,56,201,Oklahoma,59
+401012798,13,265,Washington State,15,264,Washington,28
+401012895,13,194,Ohio State,62,130,Michigan,39
+401012861,13,84,Indiana,21,2509,Purdue,28
+401012352,13,61,Georgia,45,59,Georgia Tech,21
+401015052,13,2348,Louisiana Tech,15,98,Western Kentucky,30
+401013037,13,2641,Texas Tech,24,239,Baylor,35
+401013184,13,103,Boston College,21,183,Syracuse,42
+401012351,13,52,Florida State,14,57,Florida,41
+401015051,13,2229,Florida International,25,276,Marshall,28
+401019539,13,2655,Tulane,29,2426,Navy,28
+401013187,13,153,North Carolina,28,152,NC State,34
+401013185,13,150,Duke,7,154,Wake Forest,59
+401015055,13,242,Rice,27,295,Old Dominion,13
+401021700,13,2247,Georgia State,14,290,Georgia Southern,35
+401013447,13,2335,Liberty,28,166,New Mexico State,21
+401022567,13,167,New Mexico,3,2751,Wyoming,31
+401021697,13,2026,Appalachian State,21,2653,Troy,10
+401021701,13,2433,Louisiana Monroe,28,309,Louisiana,31
+401012801,13,26,UCLA,42,24,Stanford,49
+401015056,13,2638,UTEP,7,2572,Southern Mississippi,39
+401015053,13,2393,Middle Tennessee,27,5,UAB,3
+401013335,13,275,Wisconsin,15,135,Minnesota,37
+401012815,13,77,Northwestern,24,356,Illinois,16
+401019538,13,41,Connecticut,7,218,Temple,57
+401012799,13,12,Arizona,40,9,Arizona State,41
+401012350,13,333,Alabama,52,2,Auburn,21
+401012879,13,213,Penn State,38,120,Maryland,3
+401013186,13,2390,Miami,24,221,Pittsburgh,3
+401019540,13,202,Tulsa,27,2567,SMU,24
+401012850,13,127,Michigan State,14,164,Rutgers,10
+401021698,13,326,Texas State,7,2032,Arkansas State,33
+401012357,13,238,Vanderbilt,38,2633,Tennessee,13
+401015050,13,2226,Florida Atlantic,24,2429,Charlotte,27
+401013047,13,66,Iowa State,42,2306,Kansas State,38
+401012353,13,97,Louisville,10,96,Kentucky,56
+401012355,13,228,Clemson,56,2579,South Carolina,35
+401022570,13,278,Fresno State,31,23,San José State,13
+401015054,13,2636,UT San Antonio,21,249,North Texas,24
+401012803,13,25,California,33,38,Colorado,21
+401012356,13,245,Texas A&M,74,99,LSU,72
+401012800,13,30,USC,17,87,Notre Dame,24
+401013078,13,2628,TCU,31,197,Oklahoma State,24
+401022569,13,2439,UNLV,34,2440,Nevada,29
+401012802,13,254,Utah,35,252,BYU,27
+401022566,13,68,Boise State,33,328,Utah State,24
+401022568,13,21,San Diego State,30,62,Hawai'i,31
+401056696,14,2084,Buffalo,29,2459,Northern Illinois,30
+401056704,14,264,Washington,10,254,Utah,3
+401098253,14,2579,South Carolina,28,2006,Akron,3
+401082044,14,66,Iowa State,27,2181,Drake,24
+401088766,14,152,NC State,58,151,East Carolina,3
+401056701,14,2026,Appalachian State,30,309,Louisiana,19
+401056698,14,201,Oklahoma,39,251,Texas,27
+401100159,14,259,Virginia Tech,41,276,Marshall,20
+401056703,14,2393,Middle Tennessee,25,5,UAB,27
+401081953,14,2335,Liberty,52,2450,Norfolk State,17
+401099853,14,25,California,13,24,Stanford,23
+401056699,14,2116,UCF,56,235,Memphis,41
+401056705,14,61,Georgia,28,333,Alabama,35
+401056700,14,68,Boise State,16,278,Fresno State,19
+401056697,14,221,Pittsburgh,10,228,Clemson,42
+401056702,14,194,Ohio State,45,77,Northwestern,24
+401013376,15,349,Army,17,2426,Navy,10
