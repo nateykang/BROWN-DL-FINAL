@@ -1,6 +1,7 @@
 
 import tensorflow as tf
 import numpy as np
+from preprocessing import get_data
 
 class Model(tf.keras.Model):
     def __init__(self):
@@ -10,7 +11,7 @@ class Model(tf.keras.Model):
         super(Model, self).__init__()
 
         self.batch_size = 100
-        self.num_teams = # Need to fill this in
+        self.num_teams = None
         self.learning_rate = tf.keras.optimizers.Adam(.001)
 
 
@@ -53,8 +54,15 @@ def main():
     '''
     NEED TO FILL IN
     '''
-    #get_data(...)
-    pass
+    train_data = get_data(r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\recruiting_rankings_2014.csv",
+    r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\recruiting_rankings_2015.csv",
+    r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\recruiting_rankings_2016.csv",
+    r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\recruiting_rankings_2017.csv",
+    r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\team_records_2014.csv",
+    r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\team_records_2015.csv",
+    r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\team_records_2016.csv",
+    r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\team_records_2017.csv",
+    r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\returning_production_2018.csv",)
 
 
 if __name__ == '__main__':
