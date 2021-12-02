@@ -2,6 +2,7 @@
 import tensorflow as tf
 import numpy as np
 from preprocessing import get_data
+from preprocessing import get_labels
 
 class Model(tf.keras.Model):
     def __init__(self):
@@ -64,7 +65,7 @@ def main():
     #r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\team_records_2017.csv",
     #r"C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\returning_production_2018.csv",)
 
-    train_data = get_data(
+    train_and_test_data = get_data(
         'data/recruiting_rankings_2014.csv',
         'data/recruiting_rankings_2015.csv',
         'data/recruiting_rankings_2016.csv',
@@ -74,6 +75,10 @@ def main():
         'data/team_records_2016.csv',
         'data/team_records_2017.csv',
         'data/returning_production_2018.csv')
+
+    train_labels = get_labels('data/expected_wins_2018.csv','data/team_talent_2018.csv','data/predicted_points_added_2018.csv',2018)
+    test_labels = get_labels('data/expected_wins_2019.csv','data/team_talent_2019.csv','data/predicted_points_added_2019.csv',2019)
+
 
 
 if __name__ == '__main__':

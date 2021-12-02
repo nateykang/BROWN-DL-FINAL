@@ -27,3 +27,22 @@ def get_data(rr_y1,rr_y2,rr_y3,rr_y4,tr_y1,tr_y2,tr_y3,tr_y4,rp):
     #df_merged_c.to_csv(r'C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\merged_concat_no_year.csv',header=True)
     return df_merged_c
     pass
+
+def get_labels(exp_wins, tt, ppa, year):
+    # this function concatenates all data necessary for label creation into one dataframe
+    # exp_wins are the expected wins from either the 2018 or 2019 season
+    # tt are the team_talent rankings from either the 2018 or 2019 season
+    # ppa are the predicted points added metrics from the 2018 or 2019 season
+    df_exp_wins_1 = pd.read_csv(exp_wins).drop(columns='year')
+    df_tt_1 = pd.read_csv(tt).drop(columns='year')
+    df_ppa_1 = pd.read_csv(ppa).drop(columns='conference')
+    data_frames = [df_exp_wins_1, df_tt_1,df_ppa_1]
+    df_merged_r = functools.reduce(lambda left, right: pd.merge(left, right, on=['team'], how='inner'), data_frames)
+    print(df_merged_r.head)
+    if year == 2019:
+        df_merged_r.to_csv('data/labels_test_merged_concat.csv',header=True)
+    else:
+        df_merged_r.to_csv('data/labels_train_merged_concat.csv', header=True)
+    return df_merged_r
+
+
