@@ -61,16 +61,23 @@ def train(model, train_inputs, train_labels):
     '''
 
     # Need to shuffle inputs and labels here using index
+    indices_list = list(range(0, model.num_teams))
+    shuffled_indices = tf.random.shuffle(indices_list)
+    inputs_shuffled = train_inputs[shuffled_indices][:]
+    labels_shuffled = train_labels[shuffled_indices]
 
-    for i in range(model.batch_size):
-        batched_inputs, batched_labels = get_next_batch(train_inputs, train_labels, model.batch_size, i)
-        probs = model.call(batched_inputs.astype(np.float))
+    inputs_shuffled = inputs_shuffled[:,1:]
+    labels_shuffled = labels_shuffled[:, 1:]
 
+
+    for i in range(np.int(model.num_teams/model.batch_size)):
+        batched_inputs, batched_labels = get_next_batch(inputs_shuffled, labels_shuffled, model.batch_size, i)
         with tf.GradientTape() as tape:
-            batch_loss = model.loss(probs, batched_labels)
-            gradients = tape.gradient(batch_loss, model.trainable_variables)
-            model.learning_rate.apply_gradients(zip(gradients, model.trainable_variables))
-        print(i)
+            probs = model.call(batched_inputs.astype(np.float))
+            #batch_loss = model.loss(probs, batched_labels)
+            #print(tf.shape(batch_loss))
+            #gradients = tape.gradient(batch_loss, model.trainable_variables)
+            #model.learning_rate.apply_gradients(zip(gradients, model.trainable_variables))
 
     pass
 
@@ -110,23 +117,36 @@ def main():
     train_and_test_data = train_and_test_data[train_and_test_data['team'].isin(train_labels['team'])]
     test_labels = test_labels[test_labels['team'].isin(train_and_test_data['team'])]
 
-    # Preprocessing training labels to be a [num_examples, 1] shape
+
+    # Converting teams to numbers
+    teams_list = train_labels['team'].unique()
+    teams_index = list(range(len(teams_list)))
+    train_labels = train_labels.replace(teams_list, teams_index)
+    test_labels = test_labels.replace(teams_list, teams_index)
+    train_and_test_data = train_and_test_data.replace(teams_list, teams_index)
+    train_and_test_data = train_and_test_data.sort_values(by='team')
+
+    # Preprocessing training labels to be a [num_examples, 2] shape
     conference_list = (train_labels['conference'].unique())
-    train_labels = train_labels.replace(conference_list, list(range(len(conference_list))))
+    conference_index = list(range(len(conference_list)))
+    train_labels = train_labels.replace(conference_list, conference_index)
+
     processed_labels = np.asarray(train_labels)
     processed_train_labels = np.prod(np.delete(processed_labels, 0, 1), 1)
+    teams_for_labels = np.asarray(train_labels['team'])
+    processed_train_labels = np.column_stack((teams_for_labels, processed_train_labels))
 
-    # Preprocessing test labels to be a [num_examples, 1] shape
-    conference_list = (test_labels['conference'].unique())
-    test_labels = test_labels.replace(conference_list, list(range(len(conference_list))))
-    processed_labels = np.asarray(test_labels)
-    processed_test_labels = np.prod(np.delete(processed_labels, 0, 1), 1)
+    # Preprocessing input data to be in the correct order
+    train_and_test_data_array = np.asarray(train_and_test_data)
+    train_and_test_data_array[:, [1, 0]] = train_and_test_data_array[:, [0, 1]]
+
+
 
     # For now, using the same data for training and testing, just different labels
     # We can change this later, just wanted to set up forward network
     model = Model()
     #for i in range(model.num_epochs):
-    train(model, np.asarray(train_and_test_data), processed_train_labels)
+    train(model, train_and_test_data_array, processed_train_labels)
 
 if __name__ == '__main__':
     main()

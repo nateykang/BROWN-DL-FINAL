@@ -22,7 +22,7 @@ def get_data(rr_y1,rr_y2,rr_y3,rr_y4,tr_y1,tr_y2,tr_y3,tr_y4,rp):
     df_merged_r = functools.reduce(lambda  left,right: pd.merge(left,right,on=['team'],how='inner'), data_frames)
     #k = np.arange(len(data_frames)).astype(str)
     #df_merged_c = pd.concat([x.set_index('team') for x in data_frames], axis=1, join='inner')
-    print(df_merged_r.head)
+    #print(df_merged_r.head)
     #df_merged_r.to_csv('data/merged_concat_no_year_with_teams.csv', header=True)
     #df_merged_r.to_csv(r'C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\merged_reduce.csv',header=True)
     #df_merged_c.to_csv(r'C:\Users\natha\OneDrive\Documents\GitHub\cs1470\BROWN-DL-FINAL-EM_NK\data\merged_concat_no_year.csv',header=True)
@@ -49,8 +49,8 @@ def get_labels(exp_wins, tt, ppa, year):
 
 def get_next_batch(inputs, labels, batch_size, i ):
     # a helper function for the model where we can batch our data and labels appropriately
-    batched_inputs = inputs[i*batch_size:batch_size][:]
-    batched_labels = labels[i*batch_size:batch_size]
+    batched_inputs = inputs[i*batch_size:i*batch_size + batch_size][:]
+    batched_labels = labels[i*batch_size:i*batch_size + batch_size]
     return batched_inputs, batched_labels
 
 
