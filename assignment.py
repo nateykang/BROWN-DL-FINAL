@@ -74,7 +74,8 @@ def train(model, train_inputs, train_labels):
         batched_inputs, batched_labels = get_next_batch(inputs_shuffled, labels_shuffled, model.batch_size, i)
         with tf.GradientTape() as tape:
             probs = model.call(batched_inputs.astype(np.float))
-            #batch_loss = model.loss(probs, batched_labels)
+            batch_loss = model.loss(probs, batched_labels)
+            print(np.shape(batch_loss))
             #print(tf.shape(batch_loss))
             #gradients = tape.gradient(batch_loss, model.trainable_variables)
             #model.learning_rate.apply_gradients(zip(gradients, model.trainable_variables))
@@ -132,7 +133,12 @@ def main():
     train_labels = train_labels.replace(conference_list, conference_index)
 
     processed_labels = np.asarray(train_labels)
-    processed_train_labels = np.prod(np.delete(processed_labels, 0, 1), 1)
+
+    ##### NOT SURE HOW TO PROCEDE WITH LABELS HERE, NEED TO SPEND TIME ON THIS
+    processed_labels[:,1:10] = np.where(processed_labels[:,1:10] != 0, processed_labels[:,1:10], 1)
+
+    deleted_col_mat = np.delete(processed_labels, 0, 1)
+    processed_train_labels = np.prod(deleted_col_mat, 1)
     teams_for_labels = np.asarray(train_labels['team'])
     processed_train_labels = np.column_stack((teams_for_labels, processed_train_labels))
 
