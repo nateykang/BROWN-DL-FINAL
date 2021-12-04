@@ -38,7 +38,8 @@ class Model(tf.keras.Model):
         :param labels: shape of (num_teams, 1)
         :return: loss - a Tensor with a single entry
         """
-        loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels, logits))
+        #### NEED TO WORK ON THIS NEXT
+        loss = 0
         return loss
 
     def accuracy(self, logits, labels):
@@ -75,7 +76,6 @@ def train(model, train_inputs, train_labels):
         with tf.GradientTape() as tape:
             probs = model.call(batched_inputs.astype(np.float))
             batch_loss = model.loss(probs, batched_labels)
-            print(np.shape(batch_loss))
             #print(tf.shape(batch_loss))
             #gradients = tape.gradient(batch_loss, model.trainable_variables)
             #model.learning_rate.apply_gradients(zip(gradients, model.trainable_variables))
@@ -133,8 +133,6 @@ def main():
     train_labels = train_labels.replace(conference_list, conference_index)
 
     processed_labels = np.asarray(train_labels)
-
-    ##### NOT SURE HOW TO PROCEDE WITH LABELS HERE, NEED TO SPEND TIME ON THIS
     processed_labels[:,1:10] = np.where(processed_labels[:,1:10] != 0, processed_labels[:,1:10], 1)
 
     deleted_col_mat = np.delete(processed_labels, 0, 1)
