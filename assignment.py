@@ -17,17 +17,18 @@ class Model(tf.keras.Model):
         self.learning_rate = tf.keras.optimizers.Adam(.001)
         self.num_epochs = 10
         self.hidden_size = 100
+        self.num_games = 15
 
         self.layer1 = tf.keras.layers.Dense(self.hidden_size,activation='relu')
         self.layer2 = tf.keras.layers.Dense(self.hidden_size, activation='relu')
-        self.layer3 = tf.keras.layers.Dense(1)
+        self.layer3 = tf.keras.layers.Dense(15, activation='softmax')
 
 
     def call(self, inputs):
         """
         Completed the forward pass through the network, obtaining logits
         :param inputs: shape of (num_teams, 27)
-        :return: logits - a matrix of shape (num_inputs, 1)
+        :return: logits - a matrix of shape (num_inputs, 15)
         """
         return self.layer3(self.layer2(self.layer1(inputs)))
 
@@ -38,15 +39,21 @@ class Model(tf.keras.Model):
         :param labels: shape of (num_teams, 1)
         :return: loss - a Tensor with a single entry
         """
-        #### NEED TO WORK ON THIS NEXT
-        loss = 0
+        # Need to convert the labels to one-hot
+        indices = labels
+        one_hot = tf.one_hot(indices, self.num_games)
+        #Calculate loss
+        loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(one_hot, logits))
         return loss
 
     def accuracy(self, logits, labels):
         """
         NEED TO FILL IN
         """
-        pass
+        predictions_logits = tf.cast(tf.argmax(logits, 1), dtype=tf.int64)
+        predictions_labels = tf.cast(tf.reshape(labels, [-1]), dtype=tf.int64)
+        correct_predictions = tf.equal(predictions_logits, predictions_labels)
+        return tf.reduce_mean(tf.cast(correct_predictions, tf.float32))
 
 
 def train(model, train_inputs, train_labels):
@@ -58,8 +65,10 @@ def train(model, train_inputs, train_labels):
     pass and backward pass
     :param train_inputs: train inputs (all inputs to use for training), dim of [num_teams, 27]
     :param train_labels: train labels (all labels to use for training), dim of [num_teams, 1]
-    :return: None
+    :return: avg_acc: average accuracy over all batches in the epoch
     '''
+
+    acc = []
 
     # Need to shuffle inputs and labels here using index
     indices_list = list(range(0, model.num_teams))
@@ -70,24 +79,40 @@ def train(model, train_inputs, train_labels):
     inputs_shuffled = inputs_shuffled[:,1:]
     labels_shuffled = labels_shuffled[:, 1:]
 
-
     for i in range(np.int(model.num_teams/model.batch_size)):
         batched_inputs, batched_labels = get_next_batch(inputs_shuffled, labels_shuffled, model.batch_size, i)
         with tf.GradientTape() as tape:
             probs = model.call(batched_inputs.astype(np.float))
             batch_loss = model.loss(probs, batched_labels)
-            #print(tf.shape(batch_loss))
-            #gradients = tape.gradient(batch_loss, model.trainable_variables)
-            #model.learning_rate.apply_gradients(zip(gradients, model.trainable_variables))
+            gradients = tape.gradient(batch_loss, model.trainable_variables)
+            model.learning_rate.apply_gradients(zip(gradients, model.trainable_variables))
+            acc.append(model.accuracy(probs, batched_labels))
 
-    pass
+    return np.mean(acc)
 
 
 def test(model, test_inputs, test_labels):
     """
     NEED TO FILL IN
     """
-    pass
+    acc = []
+
+    indices_list = list(range(0, model.num_teams))
+    shuffled_indices = tf.random.shuffle(indices_list)
+    inputs_shuffled = test_inputs[shuffled_indices][:]
+    labels_shuffled = test_labels[shuffled_indices]
+
+    inputs_shuffled = inputs_shuffled[:, 1:]
+    labels_shuffled = labels_shuffled[:, 1:]
+
+    for i in range(np.int(model.num_teams / model.batch_size)):
+        batched_inputs, batched_labels = get_next_batch(inputs_shuffled, labels_shuffled, model.batch_size, i)
+        probs = model.call(batched_inputs.astype(np.float))
+        acc.append(model.accuracy(probs, batched_labels))
+
+    final_accuracy = np.mean(acc)
+
+    return final_accuracy
 
 
 def main():
@@ -135,22 +160,26 @@ def main():
     processed_labels = np.asarray(train_labels)
     processed_labels[:,1:10] = np.where(processed_labels[:,1:10] != 0, processed_labels[:,1:10], 1)
 
-    deleted_col_mat = np.delete(processed_labels, 0, 1)
-    processed_train_labels = np.prod(deleted_col_mat, 1)
     teams_for_labels = np.asarray(train_labels['team'])
-    processed_train_labels = np.column_stack((teams_for_labels, processed_train_labels))
+    processed_train_labels = np.column_stack((teams_for_labels, processed_labels[:,5]))
+
+    # Preprocessing test labels to be a [num_examples, 2] shape
+    test_labels = test_labels.replace(conference_list, conference_index)
+    processed_test_labels = np.asarray(test_labels)
+    processed_test_labels = np.where(processed_test_labels[:,1:10] != 0, processed_test_labels[:,1:10], 1)
+
+    teams_for_labels = np.asarray(test_labels['team'])
+    processed_test_labels = np.column_stack((teams_for_labels, processed_test_labels[:, 5]))
 
     # Preprocessing input data to be in the correct order
     train_and_test_data_array = np.asarray(train_and_test_data)
     train_and_test_data_array[:, [1, 0]] = train_and_test_data_array[:, [0, 1]]
 
-
-
-    # For now, using the same data for training and testing, just different labels
-    # We can change this later, just wanted to set up forward network
     model = Model()
-    #for i in range(model.num_epochs):
-    train(model, train_and_test_data_array, processed_train_labels)
+    for i in range(model.num_epochs):
+        accuracy = train(model, train_and_test_data_array, processed_train_labels)
+    #final_accuracy = test(model, train_and_test_data_array, processed_test_labels)
+
 
 if __name__ == '__main__':
     main()
