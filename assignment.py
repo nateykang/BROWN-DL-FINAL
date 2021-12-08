@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 import tensorflow as tf
 import numpy as np
 from preprocessing import get_data
@@ -15,22 +15,25 @@ class Model(tf.keras.Model):
         self.batch_size = 18
         self.num_teams = 126
         self.learning_rate = tf.keras.optimizers.Adam(.001)
-        self.num_epochs = 10
-        self.hidden_size = 100
+        self.num_epochs = 20
+        self.hidden_size_1 = 500
+        self.hidden_size_2 = 200
         self.num_games = 15
 
-        self.layer1 = tf.keras.layers.Dense(self.hidden_size,activation='relu')
-        self.layer2 = tf.keras.layers.Dense(self.hidden_size, activation='relu')
-        self.layer3 = tf.keras.layers.Dense(15, activation='softmax')
+        self.layer1 = tf.keras.layers.Dense(self.hidden_size_1,activation='relu')
+        self.layer2 = tf.keras.layers.Dense(self.hidden_size_2, activation='relu')
+        self.layer3 = tf.keras.layers.Dense(15)
 
 
     def call(self, inputs):
         """
         Completed the forward pass through the network, obtaining logits
         :param inputs: shape of (num_teams, 27)
-        :return: logits - a matrix of shape (num_inputs, 15)
+        :return: logits - a matrix of shape (num_teams, 15)
         """
-        return self.layer3(self.layer2(self.layer1(inputs)))
+
+        logits = self.layer3(self.layer2(self.layer1(inputs)))
+        return logits
 
     def loss(self, logits, labels):
         """
@@ -39,11 +42,10 @@ class Model(tf.keras.Model):
         :param labels: shape of (num_teams, 1)
         :return: loss - a Tensor with a single entry
         """
-        # Need to convert the labels to one-hot
         indices = labels
         one_hot = tf.one_hot(indices, self.num_games)
-        #Calculate loss
-        loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(one_hot, logits))
+        all_loss = tf.nn.softmax_cross_entropy_with_logits(tf.reshape(one_hot, [self.batch_size, self.num_games]), logits)
+        loss = tf.reduce_mean(all_loss)
         return loss
 
     def accuracy(self, logits, labels):
@@ -75,6 +77,7 @@ def train(model, train_inputs, train_labels):
     shuffled_indices = tf.random.shuffle(indices_list)
     inputs_shuffled = train_inputs[shuffled_indices][:]
     labels_shuffled = train_labels[shuffled_indices]
+
 
     inputs_shuffled = inputs_shuffled[:,1:]
     labels_shuffled = labels_shuffled[:, 1:]
@@ -178,7 +181,10 @@ def main():
     model = Model()
     for i in range(model.num_epochs):
         accuracy = train(model, train_and_test_data_array, processed_train_labels)
-    #final_accuracy = test(model, train_and_test_data_array, processed_test_labels)
+        print(accuracy)
+
+    final_accuracy = test(model, train_and_test_data_array, processed_test_labels)
+    print(final_accuracy)
 
 
 if __name__ == '__main__':
