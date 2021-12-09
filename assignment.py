@@ -14,13 +14,13 @@ class Model(tf.keras.Model):
 
         self.batch_size = 18
         self.num_teams = 126
-        self.learning_rate = tf.keras.optimizers.Adam(learning_rate=0.001)
+        self.learning_rate = tf.keras.optimizers.Adam(.001)
         self.num_epochs = 20
         self.hidden_size_1 = 500
         self.hidden_size_2 = 200
         self.num_games = 15
 
-        self.layer1 = tf.keras.layers.Dense(self.hidden_size_1, activation='relu')
+        self.layer1 = tf.keras.layers.Dense(self.hidden_size_1,activation='relu')
         self.layer2 = tf.keras.layers.Dense(self.hidden_size_2, activation='relu')
         self.layer3 = tf.keras.layers.Dense(15)
 
@@ -38,17 +38,13 @@ class Model(tf.keras.Model):
     def loss(self, logits, labels):
         """
         Here we calculate loss by comparing the logits, calculated in the call function with the labels
-        :param logits: shape of (batch_size, 1)
-        :param labels: shape of (batch_size, 1)
+        :param logits: shape of (num_teams, 1)
+        :param labels: shape of (num_teams, 1)
         :return: loss - a Tensor with a single entry
         """
         indices = labels
         one_hot = tf.one_hot(indices, self.num_games)
-        #print(tf.reshape(one_hot, [self.batch_size, self.num_games]))
-        #logits = tf.nn.softmax(logits)
-        #all_loss = tf.keras.metrics.sparse_categorical_crossentropy(labels, logits)
-        all_loss = tf.keras.metrics.categorical_crossentropy(tf.reshape(one_hot, [self.batch_size, self.num_games]), logits)
-        #all_loss = tf.nn.softmax_cross_entropy_with_logits(tf.reshape(one_hot, [self.batch_size, self.num_games]), logits)
+        all_loss = tf.nn.softmax_cross_entropy_with_logits(tf.reshape(one_hot, [self.batch_size, self.num_games]), logits)
         loss = tf.reduce_mean(all_loss)
         return loss
 
@@ -56,12 +52,10 @@ class Model(tf.keras.Model):
         """
         NEED TO FILL IN
         """
-        predictions_logits = tf.cast(tf.argmax(logits, 1), dtype=tf.float32)
-        predictions_labels = tf.cast(tf.reshape(labels, [-1]), dtype=tf.float32)
-        print(predictions_logits,predictions_labels)
-        return tf.sqrt(tf.reduce_mean((predictions_labels-predictions_logits)**2))
-        # correct_predictions = tf.equal(predictions_logits, predictions_labels)
-        # return tf.reduce_mean(tf.cast(correct_predictions, tf.float32))
+        predictions_logits = tf.cast(tf.argmax(logits, 1), dtype=tf.int64)
+        predictions_labels = tf.cast(tf.reshape(labels, [-1]), dtype=tf.int64)
+        correct_predictions = tf.equal(predictions_logits, predictions_labels)
+        return tf.reduce_mean(tf.cast(correct_predictions, tf.float32))
 
 
 def train(model, train_inputs, train_labels):
@@ -85,7 +79,7 @@ def train(model, train_inputs, train_labels):
     labels_shuffled = train_labels[shuffled_indices]
 
 
-    inputs_shuffled = inputs_shuffled[:, 1:]
+    inputs_shuffled = inputs_shuffled[:,1:]
     labels_shuffled = labels_shuffled[:, 1:]
 
     for i in range(np.int(model.num_teams/model.batch_size)):
@@ -93,7 +87,6 @@ def train(model, train_inputs, train_labels):
         with tf.GradientTape() as tape:
             probs = model.call(batched_inputs.astype(np.float))
             batch_loss = model.loss(probs, batched_labels)
-
             gradients = tape.gradient(batch_loss, model.trainable_variables)
             model.learning_rate.apply_gradients(zip(gradients, model.trainable_variables))
             acc.append(model.accuracy(probs, batched_labels))
@@ -141,8 +134,8 @@ def main():
         'data/team_records_2015.csv',
         'data/team_records_2016.csv',
         'data/team_records_2017.csv',
-        'data/returning_production_2018.csv'
-        ,True)
+        'data/returning_production_2018.csv',
+        bool_tr2014=True)
 
     test_data = get_data(
         'data/recruiting_rankings_2015.csv',
@@ -156,17 +149,14 @@ def main():
         'data/returning_production_2019.csv',
         False)
 
-    train_labels = get_labels('data/expected_wins_2018.csv','data/team_talent_2018.csv','data/predicted_points_added_2018.csv',2018)
+    train_labels = (get_labels('data/expected_wins_2018.csv','data/team_talent_2018.csv','data/predicted_points_added_2018.csv',2018))
     test_labels = get_labels('data/expected_wins_2019.csv','data/team_talent_2019.csv','data/predicted_points_added_2019.csv',2019)
 
     # Making sure we only include teams that are in all three sets
-    #print(train_and_test_data.columns)
-    #print(train_labels.columns)
     train_labels = train_labels[train_labels['team'].isin(train_data['team'])]
     train_data = train_data[train_data['team'].isin(train_labels['team'])]
-    test_data = test_data[test_data['team'].isin(train_labels['team'])]
     test_labels = test_labels[test_labels['team'].isin(test_data['team'])]
-    #print(train_labels,test_labels,train_data,test_data)
+    test_data = test_data[test_data['team'].isin(test_labels['team'])]
 
     # Converting teams to numbers
     teams_list_train = train_labels['team'].unique()
@@ -181,28 +171,26 @@ def main():
     test_data = test_data.replace(teams_list_test, teams_index_test)
     test_data = test_data.sort_values(by='team')
 
-    # Preprocessing training labels to be a [num_examples, 2] shape
+    # Preprocessing training and testing labels to be a [num_examples, 2] shape
     conference_list = (train_labels['conference'].unique())
     conference_index = list(range(len(conference_list)))
+
     train_labels = train_labels.replace(conference_list, conference_index)
-
-    processed_labels = np.asarray(train_labels)
-    #processed_labels[:,1:10] = np.where(processed_labels[:,1:10] != 0, processed_labels[:,1:10], 1)
-
-    teams_for_labels = np.asarray(train_labels['team'])
-    processed_train_labels = np.column_stack((teams_for_labels, processed_labels[:,5]))
-
-    # Preprocessing test labels to be a [num_examples, 2] shape
+    processed_train_labels = np.asarray(train_labels)
     test_labels = test_labels.replace(conference_list, conference_index)
     processed_test_labels = np.asarray(test_labels)
-    #processed_test_labels = np.where(processed_test_labels[:,1:10] != 0, processed_test_labels[:,1:10], 1)
 
-    teams_for_labels = np.asarray(test_labels['team'])
-    processed_test_labels = np.column_stack((teams_for_labels, processed_test_labels[:, 5]))
+    teams_for_train_labels = np.asarray(train_labels['team'])
+    processed_train_labels = np.column_stack((teams_for_train_labels, processed_train_labels[:,5]))
+
+    teams_for_test_labels = np.asarray(test_labels['team'])
+    processed_test_labels = np.column_stack((teams_for_test_labels, processed_test_labels[:, 5]))
+
 
     # Preprocessing input data to be in the correct order
     train_data_array = np.asarray(train_data)
     train_data_array[:, [1, 0]] = train_data_array[:, [0, 1]]
+
     test_data_array = np.asarray(test_data)
     test_data_array[:, [1, 0]] = test_data_array[:, [0, 1]]
 
@@ -217,3 +205,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
