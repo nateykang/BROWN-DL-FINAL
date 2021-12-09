@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import functools
 
-def get_data(rr_y1,rr_y2,rr_y3,rr_y4,tr_y1,tr_y2,tr_y3,tr_y4,rp):
+def get_data(rr_y1,rr_y2,rr_y3,rr_y4,tr_y1,tr_y2,tr_y3,tr_y4,rp,bool_tr2014):
     # get_data concatenates all the input data into one dataframe
     # dataframe will consist of teams in every team record dataset
     # rr_y# is the recruiting ranking of the team # years from the test set (eg for testing on 2018, y1 is 2014)
@@ -13,7 +13,10 @@ def get_data(rr_y1,rr_y2,rr_y3,rr_y4,tr_y1,tr_y2,tr_y3,tr_y4,rp):
     df_rr2 = pd.read_csv(rr_y2).drop(columns='year')
     df_rr3 = pd.read_csv(rr_y3).drop(columns='year')
     df_rr4 = pd.read_csv(rr_y4).drop(columns='year')
-    df_tr1 = pd.read_csv(tr_y1).drop(columns='year')
+    if bool_tr2014 == True:
+        df_tr1 = pd.read_csv(tr_y1).drop(columns='year')
+    else:
+        df_tr1 = pd.read_csv(tr_y1)
     df_tr2 = pd.read_csv(tr_y2)
     df_tr3 = pd.read_csv(tr_y3)
     df_tr4 = pd.read_csv(tr_y4)
